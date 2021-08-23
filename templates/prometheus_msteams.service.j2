@@ -1,0 +1,22 @@
+{{ ansible_managed | comment }}
+
+[Unit]
+Description=Sending prometheus alerts to msteams 
+After=network-online.target
+StartLimitInterval=0
+
+[Service]
+Type=simple
+Restart=always
+ExecStart={{ prometheus_msteams_install_dir }}/prometheus-msteams \
+{% if prometheus_msteams_debug is sameas true %}          -debug \
+{% endif %}
+          -config-file {{ prometheus_msteams_config_dir }}/connectors_config.yml \
+          -template-file {{ prometheus_msteams_config_dir }}/message-card.tmpl
+ExecReload=/bin/kill -HUP $MAINPID
+SyslogIdentifier=prometheus_msteams
+RestartSec=1
+PrivateTmp=yes
+
+[Install]
+WantedBy=multi-user.target

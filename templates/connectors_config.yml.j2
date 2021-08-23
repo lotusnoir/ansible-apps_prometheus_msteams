@@ -1,0 +1,5 @@
+---
+connectors:
+{% for item in prometheus_msteams_connectors %}
+  - {{ item.name }}: "{{ item.url }}"
+{% endfor %}
