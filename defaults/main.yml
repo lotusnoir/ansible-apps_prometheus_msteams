@@ -13,9 +13,5 @@ prometheus_msteams_template_file: "./default-message-card.tmpl"
 
 # Config file
 prometheus_msteams_connectors:
-  - {name: "chan_alerts-sys", url: "https://groupeai.webhook.office.com/webhookb2/76bba983-3b74-454f-a9f0-fa9e2f93b73c@64c7b340-54c5-460a-a989-18efd805b5e8/IncomingWebhook/1e96606672394e4c815ba20dba885641/08bb8d1c-013e-4b86-8a88-da940a234e0a"}
-  - {name: "chan_alerts-noc", url: "https://groupeai.webhook.office.com/webhookb2/03e8361b-a248-446e-99ae-75a607c26fbc@64c7b340-54c5-460a-a989-18efd805b5e8/IncomingWebhook/844285cda07b4f7c8b949085e155bd07/08bb8d1c-013e-4b86-8a88-da940a234e0a"}
-  - {name: "chan_alerts-si-prep", url: "https://groupeai.webhook.office.com/webhookb2/76bba983-3b74-454f-a9f0-fa9e2f93b73c@64c7b340-54c5-460a-a989-18efd805b5e8/IncomingWebhook/d20c9a823fac4bc98dc9453dab0139b6/08bb8d1c-013e-4b86-8a88-da940a234e0a"}
-  - {name: "chan_alerts-si-prod", url: "https://groupeai.webhook.office.com/webhookb2/76bba983-3b74-454f-a9f0-fa9e2f93b73c@64c7b340-54c5-460a-a989-18efd805b5e8/IncomingWebhook/5354e5c244da42e58e3e03c6b760c34c/08bb8d1c-013e-4b86-8a88-da940a234e0a"}
-  - {name: "chan_alerts-si-sand", url: "https://groupeai.webhook.office.com/webhookb2/76bba983-3b74-454f-a9f0-fa9e2f93b73c@64c7b340-54c5-460a-a989-18efd805b5e8/IncomingWebhook/68797018ecda40b8936342e363bb08cd/08bb8d1c-013e-4b86-8a88-da940a234e0a"}
-  - {name: "chan_alerts-si-inte", url: "https://groupeai.webhook.office.com/webhookb2/76bba983-3b74-454f-a9f0-fa9e2f93b73c@64c7b340-54c5-460a-a989-18efd805b5e8/IncomingWebhook/ea8187728196442d9b652615a12e3279/08bb8d1c-013e-4b86-8a88-da940a234e0a"}
+  - {name: "chan_alerts-sys", url: "https://url.webhook.office.com/webhookb2/76bba983-3b74-454f-a9f0-fa9e2f96786787b340-54c5-460a-a989-18efd805b5e8/IncomingWebhook/1e9667867c815ba20dba885641/0678d1c-013e-4b86-8a88-da940a234e0a"}
+  - {name: "chan_alerts-noc", url: "https://url.webhook.office.com/webhookb2/d805b5e8/IncomingWebhook/844285cda07b4f7c8b6786085e155bd07/08bb8d1c-013e-4b86-8a88-df940a234e0a"}

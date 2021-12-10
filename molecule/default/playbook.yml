@@ -2,6 +2,7 @@
 - name: Run role
   hosts: all
   become: true
+  any_errors_fatal: true
 
   roles:
-    - role: apps_prometheus_msteams
+    - role: ansible-apps_prometheus_msteams
