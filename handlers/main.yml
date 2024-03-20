@@ -1,5 +1,5 @@
 ---
-- name: "restart prometheus_msteams"
+- name: "Restart prometheus_msteams"
   ansible.builtin.service:
     name: "prometheus_msteams"
     state: "restarted"

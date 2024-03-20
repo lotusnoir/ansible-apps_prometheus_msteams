@@ -34,21 +34,21 @@
     src: 'prometheus_msteams.service.j2'
     dest: '/etc/systemd/system/prometheus_msteams.service'
     mode: '0644'
-  notify: "restart prometheus_msteams"
+  notify: "Restart prometheus_msteams"
 
 - name: "Create config file for connectors"
   ansible.builtin.template:
     src: 'connectors_config.yml.j2'
     dest: '{{ prometheus_msteams_config_dir }}/connectors_config.yml'
     mode: '0640'
-  notify: "restart prometheus_msteams"
+  notify: "Restart prometheus_msteams"
 
 - name: "Copy message card"
   ansible.builtin.copy:
     src: 'message-card.tmpl'
     dest: '{{ prometheus_msteams_config_dir }}'
     mode: '0640'
-  notify: "restart prometheus_msteams"
+  notify: "Restart prometheus_msteams"
 
 - name: "Start prometheus_msteams.service"
   ansible.builtin.service:

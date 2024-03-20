@@ -9,7 +9,7 @@ prometheus_msteams_force_install: false
 prometheus_msteams_debug: false
 
 # Systemd options
-prometheus_msteams_template_file: "./default-message-card.tmpl"
+#prometheus_msteams_template_file: "./default-message-card.tmpl"
 
 # Config file
 prometheus_msteams_connectors:
