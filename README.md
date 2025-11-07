@@ -22,6 +22,7 @@
 ## Description
 
 Deploy [prometheus_msteams](https://github.com/momorientes/prometheus_msteams) to send alertmanager alerts to msteams.
+
 ## Requirements
 
 none
@@ -39,7 +40,6 @@ See [variables](/defaults/main.yml) for more details.
           gather_facts: true
           roles:
             - role: ansible-apps_prometheus_msteams
-
 
 ## License
 
